@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Material desing
+gem 'materialize-sass'
 # React
 gem 'react-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
