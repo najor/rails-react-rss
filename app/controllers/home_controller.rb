@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    news = [
+    staticArticles = [
       {
         id: 1,
         title: 'News 1',
@@ -20,6 +20,6 @@ class HomeController < ApplicationController
         link: 'http://www.computerweekly.com/news/450302574/Google-takes-on-FaceTime-and-Skype-with-Duo'
       }
     ]
-    render component: 'Home', props: {news: news}
+    render component: 'Home', props: {articles: staticArticles}
   end
 end

@@ -7,7 +7,7 @@ class Home extends React.Component {
 
     return <div>
       <h2 style={titleStyle}>Home</h2>
-      <List news={this.props.news} />
+      <List articles={this.props.articles} />
     </div>;
   }
 }

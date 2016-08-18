@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Title 1
+  description: Description 1
+  link: http://www.site1.com
+
+two:
+  title: Title 2
+  description: Description 2
+  link: http://www.site2.com
