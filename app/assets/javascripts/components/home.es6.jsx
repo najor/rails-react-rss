@@ -3,7 +3,9 @@ class Home extends React.Component {
   render() {
     return <div>
       <form acceptCharset="UTF-8" action="/home/index" method="get">
-        <div className="row">
+        <div className="row" style={{marginBottom: 0, marginTop: 20}}>
+          <div className="col s3">
+          </div>
           <div className="input-field col s3">
             <i className="material-icons prefix">link</i>
             <input id="url" placeholder={this.props.url} name="url" type="text" className="validate"/>
@@ -21,4 +23,3 @@ class Home extends React.Component {
       ;
   }
 }
-
