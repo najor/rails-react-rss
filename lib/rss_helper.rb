@@ -11,6 +11,7 @@ class RSSHelper
                         title: item.title,
                         description: item.description,
                         link: item.link,
+                        source: url,
                         id: i
                       })
 

@@ -1,6 +1,8 @@
 class Home extends React.Component {
 
   render() {
+    var token = this.props.token;
+
     return <div>
       <form acceptCharset="UTF-8" action="/home/index" method="get">
         <div className="row" style={{marginBottom: 0, marginTop: 20}}>
@@ -18,7 +20,7 @@ class Home extends React.Component {
           </div>
         </div>
       </form>
-      <ListArticles articles={this.props.articles}/>
+      <ListArticles articles={this.props.articles} token={token}/>
     </div>
       ;
   }

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :favorites
+  post 'home/add_favorite'
+
   get 'home/index'
 
   root 'home#index'
