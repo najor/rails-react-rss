@@ -20,6 +20,8 @@ class Article extends React.Component {
         <input type='hidden' name='authenticity_token' value={token} />
         <input type='hidden' name='link' value={article.link} />
         <input type='hidden' name='source' value={article.source} />
+        <input type='hidden' name='title' value={article.title} />
+        <input type='hidden' name='description' value={article.description} />
 
         <div className="col s12 m6">
           <div className="card z-depth-4 teal lighten-5">

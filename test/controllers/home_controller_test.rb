@@ -7,4 +7,9 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get add_favorite" do
+    get favorites_url
+    assert_response :success
+  end
+
 end

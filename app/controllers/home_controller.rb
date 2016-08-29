@@ -19,6 +19,8 @@ class HomeController < ApplicationController
     fav = Favorite.new do |f|
       f.link = params[:link]
       f.source = params[:source]
+      f.title = params[:title]
+      f.description = params[:description]
     end
 
     fav.save!

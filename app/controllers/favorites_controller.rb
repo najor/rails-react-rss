@@ -10,6 +10,9 @@ class FavoritesController < ApplicationController
   # GET /favorites/1
   # GET /favorites/1.json
   def show
+    render component: 'Favorite', props: {
+      favorite: @favorite
+    }
   end
 
   # GET /favorites/new
