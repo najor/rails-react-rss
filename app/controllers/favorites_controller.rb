@@ -5,6 +5,9 @@ class FavoritesController < ApplicationController
   # GET /favorites.json
   def index
     @favorites = Favorite.all
+    render component: 'Favorites', props: {
+      favorites: @favorites
+    }
   end
 
   # GET /favorites/1
