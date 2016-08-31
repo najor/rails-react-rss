@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'twitter'
+gem 'omniauth'
+gem 'omniauth-twitter'
 # Material desing
 gem 'materialize-sass'
 # React

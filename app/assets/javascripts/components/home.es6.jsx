@@ -10,7 +10,6 @@ class Home extends React.Component {
           <div className="col s3">
           </div>
           <div className="input-field col s3">
-            <i className="material-icons prefix">link</i>
             <label>Insert RSS URL here</label>
             <input id="url" placeholder={this.props.url} name="url" type="text" className="validate"/>
           </div>
@@ -22,7 +21,6 @@ class Home extends React.Component {
         </div>
       </form>
       <ListArticles articles={this.props.articles} token={token}/>
-    </div>
-      ;
+    </div>;
   }
 }

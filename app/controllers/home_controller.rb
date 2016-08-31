@@ -16,15 +16,16 @@ class HomeController < ApplicationController
   end
 
   def add_favorite
+    article = JSON.parse params[:article]
     fav = Favorite.new do |f|
-      f.link = params[:link]
-      f.source = params[:source]
-      f.title = params[:title]
-      f.description = params[:description]
+      f.link = article['link']
+      f.source = article['source']
+      f.title = article['title']
+      f.description = article['description']
     end
 
     fav.save!
 
-    redirect_to :controller => 'favorites', :action => 'show', id: fav.id
+    redirect_to :controller => 'favorites'
   end
 end
